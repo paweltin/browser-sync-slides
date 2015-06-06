@@ -1,0 +1,19 @@
+{
+  "name": "browser-sync-slides",
+  "version": "0.0.0",
+  "homepage": "https://github.com/paweltin/browser-sync-slides",
+  "authors": [
+    "Pawel <login.kowalewski@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "impress.js": "~0.5.3"
+  }
+}
