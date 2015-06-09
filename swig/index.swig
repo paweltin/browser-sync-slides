@@ -11,8 +11,9 @@
 </head>
 <body class="impress-not-supported">
     <div id="impress">
-        <div id="jeden" class="step" data-x="0" data-y="0">
-            Problem: testowanie crossbrowser compatibility w wygodny, może nawet przyjemny sposób
+        <div id="one" class="step" data-x="0" data-y="0">
+            <h1>Improving RWD and cross-browser compatibility testing</h1>
+            <h2>Improving Mirumee's frontend quality</h2>
         </div>
 
         <div id="dwa" class="step" data-x="0" data-y="100" data-rotate-x="-90">

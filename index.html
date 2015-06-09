@@ -6,27 +6,135 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>BrowserSync - features &amp; workflow integration</title>
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic|Titillium+Web:700" rel="stylesheet" />
     <link href="bower_components/impress.js/css/impress-demo.css" rel="stylesheet" />
+    <link href="static/style.css" rel="stylesheet" />
 </head>
 <body class="impress-not-supported">
     <div id="impress">
-        <div id="jeden" class="step" data-x="0" data-y="0">
-            Problem: testowanie crossbrowser compatibility w wygodny, może nawet przyjemny sposób
+        <div id="zero" class="step" data-x="0" data-y="0" data-z="-50000">
+            <p>Improving Mirumee's frontend quality</p>
         </div>
 
-        <div id="dwa" class="step" data-x="0" data-y="100" data-rotate-x="-90">
-            Rozwiązanie: BrowserSync
+        <div id="one" class="step" data-x="0" data-y="0" data-z="0">
+            <p>Improving RWD testing</p>
         </div>
 
-        <div id="trzy" class="step" data-x="0" data-y="-100" data-rotate-x="-180">
-            Ficzery: mnóstwo
+        <div id="two" class="step" data-x="500" data-y="500" data-z="-5000">
+            <p>Problemy z dotychczasowy flow</p>
         </div>
 
-        <div id="cztery" class="step" data-x="0" data-y="300" data-rotate-x="-270">
-            Co dalej: CSS regression testing
+        <div id="two-one" class="step" data-x="500" data-y="750" data-z="-5250" data-rotate-x="-90">
+            <p>&bull; jest zniechęcający</p>
+        </div>
+
+        <div id="two-two" class="step" data-x="500" data-y="500" data-z="-5500" data-rotate-x="-180">
+            <p>&bull; testy są przeprowadzane po napisaniu kodu na desktop</p>
+        </div>
+
+        <div id="two-three" class="step" data-x="500" data-y="250" data-z="-5250" data-rotate-x="-270">
+            <p>&bull; przy drobnych zmianach łatwo zapomnieć o ponownym przetestowaniu</p>
+        </div>
+
+        <div id="three" class="step" data-x="-500" data-y="0" data-z="-10000" data-rotate-y="30">
+            <p>Rozwiązanie: testing station</p>
+            <p>
+                <img src="https://mirumee.com/img/showcase-header.png" alt="RWD" class="img-big">
+            </p>
+        </div>
+
+        <div id="three-one" class="step" data-x="0" data-y="0" data-z="-11000" data-rotate-y="120">
+            <p class="advantages">+ wiele urządzeń wyświetlających stronę jednocześnie</p>
+        </div>
+
+        <div id="three-two" class="step" data-x="-1250" data-y="0" data-z="-11500" data-rotate-y="210">
+            <p class="advantages">+ rzeczywiste urządzenia, nie symulowane</p>
+        </div>
+
+        <div id="three-three" class="step" data-x="-1500" data-y="0" data-z="-10250" data-rotate-y="300">
+            <p class="disadvantages">- brak synchronizacji</p>
+        </div>
+
+        <div id="four" class="step" data-x="0" data-y="0" data-z="-15000">
+            <p>Narzędzie synchronizujące - wymagania:</p>
+        </div>
+
+        <div id="four-one" class="step" data-x="900" data-y="-100" data-z="-15150" data-rotate-y="20" data-rotate="-10">
+            <p>&bull; da się łatwo dodać do naszego frontend workflow</p>
+            <p>
+                <img src="https://www.npmjs.com/static/images/npm-logo.svg" alt="NPM">
+                <img src="http://bower.io/img/bower-logo.png" alt="Bower">
+                <img src="http://gruntjs.com/css/../img/grunt-logo.svg" alt="Grunt">
+            </p>
+        </div>
+
+        <div id="four-two" class="step" data-x="1700" data-y="-350" data-z="-15600" data-rotate-y="40" data-rotate="-20">
+            <p>&bull; nasłuchuje zmian w kodzie i przeładowuje przeglądarkę na wszystkich podłączonych urządzeniach</p>
+        </div>
+
+        <div id="four-three" class="step" data-x="2250" data-y="-750" data-z="-16200" data-rotate-y="60" data-rotate="-30">
+            <p>&bull; symulacja wykonanej akcji na wszystkich urządzeniach</p>
+        </div>
+
+        <div id="five" class="step" data-x="-2000" data-y="0" data-z="-20000" data-rotate-x="-30" data-rotate-y="50">
+            <p>Przetestowane narzędzia</p>
+        </div>
+
+        <div id="five-one" class="step" data-x="-3200" data-y="200" data-z="-19800" data-rotate-x="0" data-rotate-y="0">
+            <p>
+                <img src="http://s3.amazonaws.com/uploads.uservoice.com/logo/design_setting/190571/original/icon_128x128.png?1371216666" alt="Ghostlab">
+            </p>
+            <ul class="advantages">
+                <li>+ dużo</li>
+            </ul>
+            <ul class="disadvantages">
+                <li>- Mac only</li>
+            </ul>
+        </div>
+
+        <div id="five-two" class="step" data-x="-3800" data-y="200" data-z="-20000" data-rotate-x="20" data-rotate-y="-40">
+            <p class="browsersync">Browsersync</p>
+            <ul class="advantages">
+                <li>+ Opensource</li>
+                <li>+ multiplatform</li>
+                <li>+ likes Grunt</li>
+            </ul>
+
+            <ul class="disadvantages">
+                <li>- symuluje tylko wybrane eventy</li>
+            </ul>
+        </div>
+
+        <div id="six" class="step" data-x="0" data-y="0" data-z="-25000" data-rotate-y="-15">
+            <p>Now STOP!</p>
+            <img src="http://thepopitude.com/marlins/hammertime.gif" alt="">
+            <p>Demo time!</p>
+        </div>
+
+        <div id="seven" class="step" data-x="-1000" data-y="250" data-z="-30000" data-rotate-y="15">
+            Użycie w nowych projektach:
+            <ul>
+                <li>gist</li>
+                <li>bs-recipes</li>
+            </ul>
+        </div>
+
+        <div id="eight" class="step" data-x="-1000" data-y="500" data-z="-35000" data-rotate-y="-15">
+            <p>Coming up next:</p>
+            <ul>
+                <li>PostCSS</li>
+                <li>PhantomCSS</li>
+            </ul>
+        </div>
+
+        <div id="nine" class="step" data-x="0" data-y="0" data-z="-40000">
+            <p>Dziękuję za uwagę.</p>
+            <p>Piwo dla każdego, na jego koszt.</p>
+            <img src="http://weknowmemes.com/generator/uploads/generated/g1387858147438186291.jpg" class="img-big">
         </div>
     </div>
+
+    <img src="https://mirumee.com/img/mirumee.png" alt="Mirumee Software" class="img-mirumee">
 
     <script src="bower_components/impress.js/js/impress.js"></script>
     <script>impress().init();</script>
