@@ -8,6 +8,7 @@
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic|Titillium+Web:700" rel="stylesheet" />
     <link href="bower_components/impress.js/css/impress-demo.css" rel="stylesheet" />
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="static/style.css" rel="stylesheet" />
 </head>
 <body class="impress-not-supported">
@@ -21,19 +22,19 @@
         </div>
 
         <div id="two" class="step" data-x="500" data-y="500" data-z="-5000">
-            <p>Problemy z dotychczasowy flow</p>
+            <p>Problemy z dotychczasowym flow</p>
         </div>
 
-        <div id="two-one" class="step" data-x="500" data-y="750" data-z="-5250" data-rotate-x="-90">
-            <p>&bull; jest zniechęcający</p>
+        <div id="two-one" class="step warn" data-x="500" data-y="750" data-z="-5250" data-rotate-x="-90">
+            <p><i class="fa fa-exclamation-circle"></i> jest zniechęcający</p>
         </div>
 
-        <div id="two-two" class="step" data-x="500" data-y="500" data-z="-5500" data-rotate-x="-180">
-            <p>&bull; testy są przeprowadzane po napisaniu kodu na desktop</p>
+        <div id="two-two" class="step warn" data-x="500" data-y="500" data-z="-5500" data-rotate-x="-180">
+            <p><i class="fa fa-exclamation-circle"></i> testy są przeprowadzane po napisaniu kodu na desktop</p>
         </div>
 
-        <div id="two-three" class="step" data-x="500" data-y="250" data-z="-5250" data-rotate-x="-270">
-            <p>&bull; przy drobnych zmianach łatwo zapomnieć o ponownym przetestowaniu</p>
+        <div id="two-three" class="step warn" data-x="500" data-y="250" data-z="-5250" data-rotate-x="-270">
+            <p><i class="fa fa-exclamation-circle"></i> przy drobnych zmianach łatwo zapomnieć o ponownym przetestowaniu</p>
         </div>
 
         <div id="three" class="step" data-x="-500" data-y="0" data-z="-10000" data-rotate-y="30">
@@ -44,23 +45,23 @@
         </div>
 
         <div id="three-one" class="step" data-x="0" data-y="0" data-z="-11000" data-rotate-y="120">
-            <p class="advantages">+ wiele urządzeń wyświetlających stronę jednocześnie</p>
+            <p class="advantages"><i class="fa fa-plus-circle"></i> wiele urządzeń wyświetlających stronę jednocześnie</p>
         </div>
 
         <div id="three-two" class="step" data-x="-1250" data-y="0" data-z="-11500" data-rotate-y="210">
-            <p class="advantages">+ rzeczywiste urządzenia, nie symulowane</p>
+            <p class="advantages"><i class="fa fa-plus-circle"></i> rzeczywiste urządzenia, nie symulowane</p>
         </div>
 
         <div id="three-three" class="step" data-x="-1500" data-y="0" data-z="-10250" data-rotate-y="300">
-            <p class="disadvantages">- brak synchronizacji</p>
+            <p class="disadvantages"><i class="fa fa-minus-circle"></i> brak synchronizacji</p>
         </div>
 
         <div id="four" class="step" data-x="0" data-y="0" data-z="-15000">
             <p>Narzędzie synchronizujące - wymagania:</p>
         </div>
 
-        <div id="four-one" class="step" data-x="900" data-y="-100" data-z="-15150" data-rotate-y="20" data-rotate="-10">
-            <p>&bull; da się łatwo dodać do naszego frontend workflow</p>
+        <div id="four-one" class="step info" data-x="900" data-y="-100" data-z="-15150" data-rotate-y="20" data-rotate="-10">
+            <p><i class="fa fa-check-circle"></i> da się łatwo dodać do naszego frontend workflow</p>
             <p>
                 <img src="https://www.npmjs.com/static/images/npm-logo.svg" alt="NPM">
                 <img src="http://bower.io/img/bower-logo.png" alt="Bower">
@@ -68,12 +69,12 @@
             </p>
         </div>
 
-        <div id="four-two" class="step" data-x="1700" data-y="-350" data-z="-15600" data-rotate-y="40" data-rotate="-20">
-            <p>&bull; nasłuchuje zmian w kodzie i przeładowuje przeglądarkę na wszystkich podłączonych urządzeniach</p>
+        <div id="four-two" class="step info" data-x="1700" data-y="-350" data-z="-15600" data-rotate-y="40" data-rotate="-20">
+            <p><i class="fa fa-check-circle"></i> nasłuchuje zmian w kodzie i przeładowuje przeglądarkę na wszystkich podłączonych urządzeniach</p>
         </div>
 
-        <div id="four-three" class="step" data-x="2250" data-y="-750" data-z="-16200" data-rotate-y="60" data-rotate="-30">
-            <p>&bull; symulacja wykonanej akcji na wszystkich urządzeniach</p>
+        <div id="four-three" class="step info" data-x="2250" data-y="-750" data-z="-16200" data-rotate-y="60" data-rotate="-30">
+            <p><i class="fa fa-check-circle"></i> symulacja wykonanej akcji na wszystkich urządzeniach</p>
         </div>
 
         <div id="five" class="step" data-x="-2000" data-y="0" data-z="-20000" data-rotate-x="-30" data-rotate-y="50">
@@ -84,25 +85,38 @@
             <p>
                 <img src="http://s3.amazonaws.com/uploads.uservoice.com/logo/design_setting/190571/original/icon_128x128.png?1371216666" alt="Ghostlab">
             </p>
-            <ul class="advantages">
-                <li>+ dużo</li>
-            </ul>
-            <ul class="disadvantages">
-                <li>- Mac only</li>
-            </ul>
+
+            <div class="cols-2">
+                <ul class="advantages">
+                    <li><i class="fa fa-plus-circle"></i> synchronizacja eventów</li>
+                    <li><i class="fa fa-plus-circle"></i> server / proxy</li>
+                    <li><i class="fa fa-plus-circle"></i> remote inspector</li>
+                    <li><i class="fa fa-plus-circle"></i> edycja DOM i CSS na żywo</li>
+                    <li><i class="fa fa-plus-circle"></i> wbudowane kompilatory (+&nbsp;watcher)</li>
+                </ul>
+
+                <ul class="disadvantages">
+                    <li><i class="fa fa-minus-circle"></i> Mac</li>
+                    <li><i class="fa fa-minus-circle"></i> brak integracji z 3rd party tools</li>
+                </ul>
+            </div>
         </div>
 
-        <div id="five-two" class="step" data-x="-3800" data-y="200" data-z="-20000" data-rotate-x="20" data-rotate-y="-40">
+        <div id="five-two" class="step" data-x="-4000" data-y="200" data-z="-20000" data-rotate-x="20" data-rotate-y="-40">
             <p class="browsersync">Browsersync</p>
-            <ul class="advantages">
-                <li>+ Opensource</li>
-                <li>+ multiplatform</li>
-                <li>+ likes Grunt</li>
-            </ul>
 
-            <ul class="disadvantages">
-                <li>- symuluje tylko wybrane eventy</li>
-            </ul>
+            <div class="cols-2">
+                <ul class="advantages">
+                    <li><i class="fa fa-plus-circle"></i> opensource</li>
+                    <li><i class="fa fa-plus-circle"></i> multiplatform</li>
+                    <li><i class="fa fa-plus-circle"></i> <i class="fa fa-heart"></i> NPM &amp; Grunt</li>
+                    <li><i class="fa fa-plus-circle"></i> tunnelling</li>
+                </ul>
+
+                <ul class="disadvantages">
+                    <li><i class="fa fa-minus-circle"></i> synchronizuje tylko wybrane eventy</li>
+                </ul>
+            </div>
         </div>
 
         <div id="six" class="step" data-x="0" data-y="0" data-z="-25000" data-rotate-y="-15">
