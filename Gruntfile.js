@@ -14,8 +14,12 @@ module.exports = function(grunt) {
                     ]
                 },
                 options: {
+                    ghostMode: {
+                        scroll: false
+                    },
                     open: false,
-                    port: '8000',
+                    port: '3004',
+                    reloadOnRestart: true,
                     server: {
                         baseDir: './'
                     }
